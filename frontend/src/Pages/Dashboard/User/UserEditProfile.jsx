@@ -169,7 +169,6 @@ function UserEditProfile() {
                   </label>
                   <input
                     type='text'
-                    placeholder={apiDate?.username}
                     className='input input-bordered w-full max-w-xs'
                     onChange={(e) => {
                       setInputForm((oldValue) => ({
@@ -207,7 +206,6 @@ function UserEditProfile() {
                   </label>
                   <input
                     type='tel'
-                    placeholder={apiDate?.phoneNo}
                     className='input input-bordered w-full max-w-xs'
                     onChange={(e) => {
                       setInputForm((oldValue) => ({
@@ -225,7 +223,7 @@ function UserEditProfile() {
                   </label>
                   <input
                     type='password'
-                    placeholder='******'
+                    placeholder=''
                     className='input input-bordered w-full max-w-xs'
                     onChange={(e) => {
                       setInputForm((oldValue) => ({

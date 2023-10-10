@@ -139,7 +139,7 @@ function Admin_HomeContent() {
 
           <div className='bg-white rounded-lg p-8 shadow-lg'>
             <h3 className='headingh3 text-center text-gray-800'>
-              Tournement Arranged
+              Tournaments Arranged
             </h3>
             <h2 className='prara text-center mt-4 text-3xl text-gray-700'>
               {profile?.tournament}

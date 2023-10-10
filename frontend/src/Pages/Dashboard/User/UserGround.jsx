@@ -8,7 +8,9 @@ import TopNavigationBar from "../../../Components/Dashboard/TopNavigationBar";
 import UserLeftMenuBar from "../../../Components/UserLeftMenuBar";
 
 function UserGround() {
-  const [data, setData] = useState();
+  const [data, setData] = useState([]);
+  const [modal, setModal] = useState(false);
+  const [embedCode, setEmbedCode] = useState("");
 
   const navigate = useNavigate();
   useEffect(() => {

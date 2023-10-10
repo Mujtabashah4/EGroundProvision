@@ -5,7 +5,7 @@ const bcrypt = require("bcrypt");
 
 module.exports = async (req, res) => {
   try {
-    const { username, email, password, phoneNo,membership } = req.body;
+    const { username, email, password, phoneNo, membership } = req.body;
     const user = await User.findOne({
       $or: [{ email: email }],
     });
@@ -30,13 +30,13 @@ module.exports = async (req, res) => {
     console.log(hashedPassword)
 
     const newUser = await User.create({
-      username:username,
-      email:email,
+      username: username,
+      email: email,
       password: hashedPassword,
-      role:"user",
-      phoneNo:phoneNo,
-      membership:membership,
-      membershipExpiresAt:membershipExpiresAt,
+      role: "user",
+      phoneNo: phoneNo,
+      membership: membership,
+      membershipExpiresAt: membershipExpiresAt,
     });
     const token = await createToken(newUser._id);
 

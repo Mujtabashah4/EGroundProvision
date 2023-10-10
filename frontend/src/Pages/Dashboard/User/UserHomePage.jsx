@@ -59,7 +59,7 @@ function UserHomePage() {
         {/* *************************************** */}
         <div className='w-full p-12 bg-gray-50 h-screen content transform ease-in-out duration-500 pt-20 px-2 md:px-5 pb-4 '>
           <h2 className='headingh4 mt-8 p-8 headingh4 text-3xl'>
-            Welcome : {data?.username}
+            Welcome {data?.username}
           </h2>
           <div className='float-right bg-white p-2 px-8 relative -top-20 rounded-md shadow-md '>
             <h2 className='buttonText text-center'>Status</h2>
@@ -74,7 +74,7 @@ function UserHomePage() {
           </div>
           <div className='flex flex-wrap  items-center justify-center gap-12 bg-gradient-to-r from-green-500 to-green-700 w-2/4 h-52  m-auto p-4 rounded-md shadow-md'>
             <div>
-              <h2 className='headingh4 text-center text-white'> MemberShip</h2>
+              <h2 className='headingh4 text-center text-white'> Membership</h2>
               <h3 className='headingh3  text-center text-white'>
                 {data?.membership}
               </h3>

@@ -152,7 +152,6 @@ function MemberEditProfile() {
                   </label>
                   <input
                     type='text'
-                    placeholder={apiDate?.username}
                     className='input input-bordered w-full max-w-xs'
                     onChange={(e) => {
                       setInputForm((oldValue) => ({
@@ -190,7 +189,6 @@ function MemberEditProfile() {
                   </label>
                   <input
                     type='tel'
-                    placeholder={apiDate?.phoneNo}
                     className='input input-bordered w-full max-w-xs'
                     onChange={(e) => {
                       setInputForm((oldValue) => ({
@@ -201,14 +199,16 @@ function MemberEditProfile() {
                     value={inputForm.phoneNo}
                   />
                 </div>
+              </div>
 
-                <div>
+              <div className='flex items-center justify-around mt-4'>
+                <div className=''>
                   <label htmlFor='' className='block '>
                     Password
                   </label>
                   <input
                     type='password'
-                    placeholder='******'
+                    placeholder=''
                     className='input input-bordered w-full max-w-xs'
                     onChange={(e) => {
                       setInputForm((oldValue) => ({

@@ -69,50 +69,59 @@ function MemberContactSupport() {
 
           <div className='bg-white rounded-md shadow-md w-3/5 block m-auto p-6'>
             <h2 className='headingh4 text-center mb-4'>Fill form</h2>
-            <div className='flex gap-10'>
-              <div>
-                <label htmlFor=''>Name</label>
-                <input
-                  type='text'
-                  placeholder='Ali'
-                  className='input input-bordered w-full max-w-xs'
-                  value={contactForm.name}
-                  onChange={(e) => {
-                    setContactForm((oldValue) => ({
-                      ...oldValue,
-                      name: e.target.value,
-                    }));
-                  }}
-                />
-              </div>
-              <div>
-                <label htmlFor=''>Email</label>
-                <input
-                  type='email'
-                  placeholder='alex@ms.gov'
-                  className='input input-bordered w-full max-w-xs'
-                  value={contactForm.email}
-                  onChange={(e) => {
-                    setContactForm((oldValue) => ({
-                      ...oldValue,
-                      email: e.target.value,
-                    }));
-                  }}
-                />
-              </div>
+
+            <div className='flex justify-center items-center '>
+              <label htmlFor='' className=' mr-2'>
+                Name
+              </label>
+              <input
+                type='text'
+                placeholder='Enter your name '
+                className='input input-bordered w-full max-w-xs'
+                value={contactForm.name}
+                onChange={(e) => {
+                  setContactForm((oldValue) => ({
+                    ...oldValue,
+                    name: e.target.value,
+                  }));
+                }}
+              />
+            </div>
+            <div className='flex items-center justify-center  mt-4'>
+              <label htmlFor='' className=' mr-2'>
+                Email
+              </label>
+              <input
+                type='email'
+                placeholder='Enter your email'
+                className='input input-bordered w-full max-w-xs'
+                value={contactForm.email}
+                onChange={(e) => {
+                  setContactForm((oldValue) => ({
+                    ...oldValue,
+                    email: e.target.value,
+                  }));
+                }}
+              />
             </div>
 
-            <textarea
-              className='textarea textarea-bordered mt-4'
-              placeholder='Enter your query in details'
-              value={contactForm.description}
-              onChange={(e) => {
-                setContactForm((oldValue) => ({
-                  ...oldValue,
-                  description: e.target.value,
-                }));
-              }}
-            ></textarea>
+            <div className='flex items-center justify-center mt-4'>
+              <label htmlFor='' className=' mr-2'>
+                Queries
+              </label>
+
+              <textarea
+                className='textarea textarea-bordered mt-4 w-80'
+                placeholder='Enter your query in details'
+                value={contactForm.description}
+                onChange={(e) => {
+                  setContactForm((oldValue) => ({
+                    ...oldValue,
+                    description: e.target.value,
+                  }));
+                }}
+              ></textarea>
+            </div>
             <div>
               <button
                 onClick={handleSupport}

@@ -5,15 +5,26 @@ import { BiSupport, BiUser } from "react-icons/bi";
 // bg-[#75f07a]
 function MemberLeftMenuBar() {
   return (
-    <aside className="w-52 bg-gradient-to-r from-green-500 to-green-700  mt-16 shadow-lg p-3   z-50 flex h-full bg-red-white ">
+    <aside
+      className='w-52 bg-gradient-to-r from-green-500 to-green-700   mt-16 shadow-md p-3   z-50 flex  h-full bg-red-white '
+      // style={{
+      //   position: "fixed",
+      //   zIndex: "1",
+      //   // Set the position to fixed
+      //   // top: "0", // Stick to the top of the viewport
+      //   // bottom: "0", // Extend to the bottom of the viewport
+      //   // maxHeight: "100vh", // Limit the height to the viewport height
+      //   // overflowY: "auto", // Add vertical scrolling if needed
+      // }}
+    >
       {/* open sidebar button */}
 
       {/* MINI SIDEBAR*/}
-      <div className="mini mt-8 flex flex-col space-y-5 w-full  h-[calc(100vh)]">
-        <div className=" flex items-center justify-center  hover:ml-4   text-gray-800  dark:hover:text-white cursor-pointer w-full bg-white shadow-sm hover:bg-gray-200  hover:border hover:border-solid p-3 rounded-full ">
+      <div className='mini mt-8 flex flex-col space-y-5 w-full  h-[calc(100vh)]'>
+        <div className=' flex items-center justify-center   text-gray-800  dark:hover:text-white cursor-pointer w-full bg-white shadow-sm hover:bg-gray-200  hover:border hover:border-solid p-3 rounded-full '>
           <NavLink
             to={"/home/member"}
-            className="text-gray-800 mr-2 buttonText font-medium"
+            className='text-gray-800 mr-2 buttonText font-medium'
             style={({ isActive, isPending }) => {
               return {
                 fontWeight: isActive ? "bold" : "",
@@ -24,24 +35,24 @@ function MemberLeftMenuBar() {
             Home
           </NavLink>
           <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            strokeWidth="{1.5}"
-            stroke="currentColor"
-            className="w-4 h-4 text-gray-800 font-bold "
+            xmlns='http://www.w3.org/2000/svg'
+            fill='none'
+            viewBox='0 0 24 24'
+            strokeWidth='{1.5}'
+            stroke='currentColor'
+            className='w-4 h-4 text-gray-800 font-bold '
           >
             <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              d="M2.25 12l8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25"
+              strokeLinecap='round'
+              strokeLinejoin='round'
+              d='M2.25 12l8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25'
             />
           </svg>
         </div>
 
         <Link to={"/member/ground"}>
-          <div className=" flex items-center justify-center  hover:ml-4   text-gray-800  dark:hover:text-white cursor-pointer w-full bg-white shadow-sm hover:bg-gray-200  hover:border hover:border-solid p-3 rounded-full ">
-            <h4 className="text-gray-800 mr-2 buttonText font-medium">
+          <div className=' flex items-center justify-center   text-gray-800  dark:hover:text-white cursor-pointer w-full bg-white shadow-sm hover:bg-gray-200  hover:border hover:border-solid p-3 rounded-full '>
+            <h4 className='text-gray-800 mr-2 buttonText font-medium'>
               Grounds
             </h4>
 
@@ -49,10 +60,10 @@ function MemberLeftMenuBar() {
           </div>
         </Link>
 
-        <div className=" flex items-center justify-center  hover:ml-4   text-gray-800  dark:hover:text-white cursor-pointer w-full bg-white shadow-sm hover:bg-gray-200  hover:border hover:border-solid p-3 rounded-full ">
+        <div className=' flex items-center justify-center    text-gray-800  dark:hover:text-white cursor-pointer w-full bg-white shadow-sm hover:bg-gray-200  hover:border hover:border-solid p-3 rounded-full '>
           <NavLink
             to={"/member/team"}
-            className="text-gray-800 mr-2 buttonText font-medium"
+            className='text-gray-800 mr-2 buttonText font-medium'
             style={({ isActive, isPending }) => {
               return {
                 fontWeight: isActive ? "bold" : "",
@@ -65,10 +76,10 @@ function MemberLeftMenuBar() {
           <PiUsersThreeBold />
         </div>
 
-        <div className=" flex items-center justify-center  hover:ml-4   text-gray-800  dark:hover:text-white cursor-pointer w-full bg-white shadow-sm hover:bg-gray-200  hover:border hover:border-solid p-3 rounded-full ">
+        <div className=' flex items-center justify-center    text-gray-800  dark:hover:text-white cursor-pointer w-full bg-white shadow-sm hover:bg-gray-200  hover:border hover:border-solid p-3 rounded-full '>
           <NavLink
             to={"/member/profile/setting"}
-            className="text-gray-800 mr-2 buttonText font-medium"
+            className='text-gray-800 mr-2 buttonText font-medium'
             style={({ isActive, isPending }) => {
               return {
                 fontWeight: isActive ? "bold" : "",
@@ -82,10 +93,10 @@ function MemberLeftMenuBar() {
           <BiUser />
         </div>
 
-        <div className=" flex items-center justify-center  hover:ml-4   text-gray-800  dark:hover:text-white cursor-pointer w-full bg-white shadow-sm hover:bg-gray-200  hover:border hover:border-solid p-3 rounded-full ">
+        <div className=' flex items-center justify-center   text-gray-800  dark:hover:text-white cursor-pointer w-full bg-white shadow-sm hover:bg-gray-200  hover:border hover:border-solid p-3 rounded-full '>
           <NavLink
             to={"/member/contact"}
-            className="text-gray-800 mr-2 buttonText font-medium"
+            className='text-gray-800 mr-2 buttonText font-medium'
             style={({ isActive, isPending }) => {
               return {
                 fontWeight: isActive ? "bold" : "",

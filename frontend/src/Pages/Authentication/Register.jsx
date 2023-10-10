@@ -21,7 +21,7 @@ function Register() {
   const MessageNotify = () => toast.msg("User alrady exists");
   const Errornotify = () =>
     toast.error("Error valid data to continue OR email alredy exists");
-    const customErrorNotify = (errorMessage) => toast.error(errorMessage);
+  const customErrorNotify = (errorMessage) => toast.error(errorMessage);
 
   const navigate = useNavigate();
   const handleRegister = () => {
@@ -92,14 +92,14 @@ function Register() {
         if (response.data.code == 200) {
           navigate("/paymentotp");
         } else {
-          customErrorNotify("Invalid Email")
+          customErrorNotify("Invalid Email");
         }
 
         // console.log("Response:", response.data);
       })
       .catch((error) => {
         // Handle any errors that occurred during the request
-        customErrorNotify("Enter the valid Email")
+        customErrorNotify("Enter the valid Email");
       });
   };
   return (
@@ -235,7 +235,9 @@ function Register() {
                 />
               </div>
               <div>
-                <label htmlFor='Pass' className="ml-10">Phone Number</label>
+                <label htmlFor='Pass' className='ml-10'>
+                  Phone Number
+                </label>
                 <input
                   type='tel'
                   className='block border border-grey-light ml-10  p-3 rounded mb- '
